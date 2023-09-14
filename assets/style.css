@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto";
 }
@@ -5,14 +6,64 @@ body button {
   font-size: 16px;
   color: #353535;
 }
+body .btn-fonctionnement {
+  border-radius: 20px;
+  box-shadow: 0 4px 15px 0 rgb(0, 0, 0);
+  border: none;
+  width: 322.486px;
+  height: 72.379px;
+}
+body .btn-explorer {
+  width: 218px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  background-color: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); /* à revoir */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 body .carte {
   height: 251px;
   border-radius: 15px 15px 0 0;
+  object-fit: cover; /* pour ces deux là revoir avec la prof */
 }
 body .titre-carte {
   font-size: 18px;
   font-weight: 700;
   color: #000;
+}
+body .les-restaurants {
+  background-color: #F6F6F6;
+}
+
+header {
+  display: flex;
+  width: 375px;
+  height: 63px;
+  padding: 14px 89px 13px 89px;
+  justify-content: center;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+}
+footer img {
+  display: flex;
+  width: 139px;
+  height: 27px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  margin: 0 0 2px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

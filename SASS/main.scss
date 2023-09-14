@@ -8,17 +8,75 @@ body {
     button {
         font-size: $size-btn;
         color: $color-btn;
+
+        
+    }
+    .btn-fonctionnement {
+        border-radius: 20px;
+        box-shadow: 0 4px 15px 0 rgba(0,0,0,15);
+        border: none;
+        width: 322.486px;
+        height: 72.379px;
+    }
+
+    .btn-explorer {
+        width: 218px;
+        height: 50px;
+        color: $color-pbtn;
+        text-align: center;
+        border-radius: 25px;
+        background-color: var(--boutton-color,linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); /* à revoir */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .carte {
         height: 251px;
         border-radius: 15px 15px 0 0;
+        object-fit: cover;  /* pour ces deux là revoir avec la prof */
     }
 
     .titre-carte {
         font-size: $titre-carte-size;
         font-weight: $titre-carte-weight;
         color: $color-titre;
+    }
+
+    .les-restaurants {
+        background-color: $background-main;
+    }
+}
+
+header {
+    display: flex;
+    width: 375px;
+    height: 63px;
+    padding: 14px 89px 13px 89px;
+    justify-content: center;
+}
+
+footer {
+    background-color: $background-footer;
+    color: $color-pbtn;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        display: flex;
+        width: 139px;
+        height: 27px;
+        ;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        
+        li{
+            margin : 0 0 2px 0;
+        }
     }
 }
 
