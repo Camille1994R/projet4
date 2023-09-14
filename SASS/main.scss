@@ -1,7 +1,24 @@
 @import "variables"; 
 @import "buttons";
 
+
 body {
-    background-color : $primary-color;
+    font-family: 'Roboto' ;
     
+    button {
+        font-size: $size-btn;
+        color: $color-btn;
+    }
+
+    .carte {
+        height: 251px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .titre-carte {
+        font-size: $titre-carte-size;
+        font-weight: $titre-carte-weight;
+        color: $color-titre;
+    }
 }
+

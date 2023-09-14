@@ -1,5 +1,18 @@
 body {
-  background-color: #c5e2f8;
+  font-family: "Roboto";
+}
+body button {
+  font-size: 16px;
+  color: #353535;
+}
+body .carte {
+  height: 251px;
+  border-radius: 15px 15px 0 0;
+}
+body .titre-carte {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
