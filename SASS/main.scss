@@ -53,17 +53,31 @@ table {
 }
 
 
+/* main */
+
+
 body {
     font-family: 'Roboto' ;
     display: flex;
     flex-direction: column;
 
+    h1 {
+        margin-top: 39px;
+        margin-bottom: 15px;
+        font-size: $titres-size;
+        font-weight: $titres-weight;
+    }
+
     .entête {
         text-align: center;
+        background: $background-main;
     }
 
     .titres {
-        
+        margin: 0px 0 22px 0;
+        font-size: $titres-size;
+        font-weight: $titres-weight;
+        padding: 0 0 0 20px;
     }
 
     .titres-f {
@@ -83,7 +97,8 @@ body {
         text-align: center;
         border-radius: 25px;
         background: var(--boutton-color,linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); /* à revoir */
-        justify-content: center;
+        border: none;
+        margin: 22px 0 57px 0;
     }
     
     button {
@@ -97,9 +112,8 @@ body {
         border-radius: 100%;
         color: white;
         text-align: center;
-        width: 15px;
-        height: 15px;
-        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
         background: $bouton-color;
         position: absolute;
         top: 50%;
@@ -108,7 +122,7 @@ body {
         }
 
     .fonctionnement {
-        margin: 48px 20px 68px 20px;
+        margin: 48px 20px 43px 20px;
     }
 
     .icone {
@@ -117,12 +131,17 @@ body {
     }
 
     .fa-mobile-screen-button, .fa-list-ul {
-        fill: #7E7E7E;
+        color: #7E7E7E;
     }
 
     .fa-store {
-        fill: $bouton-color;
+        color: $bouton-color;
     }
+
+    .fa-location-dot {
+        margin: 0 17px 0 0;
+    }
+
 
     .etapes {
         margin: 28px 58px 28px 0;
@@ -144,6 +163,7 @@ body {
 
     .fonctionnement-item {
         position: relative;
+        margin: 0 0 25px 0;
     }
 
     .btn-localisation {
@@ -156,13 +176,14 @@ body {
     .fullcard {
        margin-bottom: 18px;
        position: relative;
+       padding: 0 20px 0 20px;
     }
 
     .carte {
         height: 251px;
         border-radius: 15px 15px 0 0;
         object-fit: cover; 
-        width: 100%;/* pour ces deux là revoir avec la prof */
+        width: 100%;
         
         text-align: center;
         color: white;       
@@ -175,14 +196,13 @@ body {
     .nouveau {
             background-color: $background-info;
             position: absolute;
-            top: 80px;
-            right: 29px;
-            text-align: center;
+            top: 20px;
+            right: 35px;
             color: $color-info;
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+            padding: 10px 6px;
+            text-align: center;
             border-radius: 2px;
-            width: 80px;
-            height: 29px;
         }
     
     
@@ -190,9 +210,8 @@ body {
     .les-restaurants {
         background-color: $background-main;
         text-align: left;
-        margin: 55px 17px 60px 17px;
-        
-            
+        padding: 55px 0px 60px 0px;
+        width: 100%;    
     }
     
  .les-restaurants   .titre-carte {
@@ -211,12 +230,18 @@ body {
 
 .fa-heart {
     position: absolute;
+    height: 22px;
+    width: 22px;
+    right: 20px;
+    margin-top: -40px;
+
     
 }
 
 header {
 
     text-align: center;
+    margin: 14px 0;
     
     .logohead {
         height: 36px;
@@ -235,16 +260,16 @@ footer {
         display: flex;
         width: 139px;
         height: 27px;
+        margin: 0 0 18px 0;
         ;
     }
 
     ul {
-        list-style: none;
-        padding: 0;
-        
-        li{
-            margin : 0 0 2px 0;
-        }
+        list-style: none;      
+    }
+
+    li {
+        padding: 0 0 3px 0;
     }
 }
 

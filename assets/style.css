@@ -54,13 +54,27 @@ table {
   border-spacing: 0;
 }
 
+/* main */
 body {
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
 }
+body h1 {
+  margin-top: 39px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
 body .entête {
   text-align: center;
+  background: #F6F6F6;
+}
+body .titres {
+  margin: 0px 0 22px 0;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 0 0 20px;
 }
 body .titres-f {
   text-align: left;
@@ -77,7 +91,8 @@ body .btn-explorer {
   text-align: center;
   border-radius: 25px;
   background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); /* à revoir */
-  justify-content: center;
+  border: none;
+  margin: 22px 0 57px 0;
 }
 body button {
   font-size: 16px;
@@ -88,9 +103,8 @@ body .rond {
   border-radius: 100%;
   color: white;
   text-align: center;
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
   background: #9356DC;
   position: absolute;
   top: 50%;
@@ -98,17 +112,20 @@ body .rond {
   left: -7px;
 }
 body .fonctionnement {
-  margin: 48px 20px 68px 20px;
+  margin: 48px 20px 43px 20px;
 }
 body .icone {
   margin: 27px 23px 27px 25px;
   flex-shrink: 0;
 }
 body .fa-mobile-screen-button, body .fa-list-ul {
-  fill: #7E7E7E;
+  color: #7E7E7E;
 }
 body .fa-store {
-  fill: #9356DC;
+  color: #9356DC;
+}
+body .fa-location-dot {
+  margin: 0 17px 0 0;
 }
 body .etapes {
   margin: 28px 58px 28px 0;
@@ -127,6 +144,7 @@ body .btn-fonctionnement {
 }
 body .fonctionnement-item {
   position: relative;
+  margin: 0 0 25px 0;
 }
 body .btn-localisation {
   padding: 12.5px 0;
@@ -136,12 +154,13 @@ body .btn-localisation {
 body .fullcard {
   margin-bottom: 18px;
   position: relative;
+  padding: 0 20px 0 20px;
 }
 body .carte {
   height: 251px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
-  width: 100%; /* pour ces deux là revoir avec la prof */
+  width: 100%;
   text-align: center;
   color: white;
 }
@@ -151,19 +170,19 @@ body .les-titres {
 body .nouveau {
   background-color: #99E2D0;
   position: absolute;
-  top: 80px;
-  right: 29px;
-  text-align: center;
+  top: 20px;
+  right: 35px;
   color: #008766;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px 6px;
+  text-align: center;
   border-radius: 2px;
-  width: 80px;
-  height: 29px;
 }
 body .les-restaurants {
   background-color: #F6F6F6;
   text-align: left;
-  margin: 55px 17px 60px 17px;
+  padding: 55px 0px 60px 0px;
+  width: 100%;
 }
 body .les-restaurants .titre-carte {
   font-size: 18px;
@@ -180,10 +199,15 @@ body .les-restaurants .titre-carte {
 
 .fa-heart {
   position: absolute;
+  height: 22px;
+  width: 22px;
+  right: 20px;
+  margin-top: -40px;
 }
 
 header {
   text-align: center;
+  margin: 14px 0;
 }
 header .logohead {
   height: 36px;
@@ -201,13 +225,13 @@ footer img {
   display: flex;
   width: 139px;
   height: 27px;
+  margin: 0 0 18px 0;
 }
 footer ul {
   list-style: none;
-  padding: 0;
 }
-footer ul li {
-  margin: 0 0 2px 0;
+footer li {
+  padding: 0 0 3px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
