@@ -1,7 +1,8 @@
 @import "variables"; 
 @import "buttons";
-@import "icone";
+@import "menu";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -220,7 +221,7 @@ body {
         color: $color-titre;
         margin: 16px 60px 5px 12px ;
              }
-}
+
 
 .les-restaurants .soustitre-carte {
     margin: 0 80px 12px 12px;
@@ -234,9 +235,10 @@ body {
     width: 22px;
     right: 20px;
     margin-top: -40px;
+    }
 
-    
 }
+
 
 header {
 
@@ -271,5 +273,78 @@ footer {
     li {
         padding: 0 0 3px 0;
     }
+}
+
+
+
+
+
+
+
+
+
+/* Les menus*/
+
+
+.imgmenu {
+    object-fit: cover;
+    height: 275px;
+    width: 100%;
+}
+
+.coeur {
+    padding-left: 35px;
+}
+
+.titre-menu {
+    font-family: Shrikhand;
+    font-size: $grandtitre-size;
+    font-weight: $grandtitre-weight;
+    margin: 32 0 0 13px;
+    color: #101010;
+}
+
+.soustitre-menu {
+    margin: 40px 0 12px 10px;
+}
+
+
+.la-carte {
+    background: $background-main;
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+    }
+
+.plat {
+    padding: 15px;
+    margin: 12px 10px;
+    background: $color-pbtn;
+    box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
+    position: relative;
+}
+
+.sstitres {
+    font-weight: $menu-weight;
+    font-size: $titre-carte-size;
+    padding-bottom: 5px;
+}
+
+.ssstitres {
+    font-size: $menu-soustitres-size;
+    font-weight: $soustitres-weight;
+}
+
+.prix {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-weight: $p-weight;
+    font-size: $menu-soustitres-size;
+}
+
+.commander {
+    padding: 20px 0 0 0;
+    text-align: center;
 }
 

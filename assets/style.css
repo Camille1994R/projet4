@@ -1,5 +1,9 @@
 @charset "UTF-8";
+/*titre h4*/
+/*sous titre h4*/
+/* couleur */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -190,14 +194,12 @@ body .les-restaurants .titre-carte {
   color: #000;
   margin: 16px 60px 5px 12px;
 }
-
-.les-restaurants .soustitre-carte {
+body .les-restaurants .soustitre-carte {
   margin: 0 80px 12px 12px;
   font-size: 17px;
   font-weight: 300;
 }
-
-.fa-heart {
+body .fa-heart {
   position: absolute;
   height: 22px;
   width: 22px;
@@ -232,6 +234,68 @@ footer ul {
 }
 footer li {
   padding: 0 0 3px 0;
+}
+
+/* Les menus*/
+.imgmenu {
+  object-fit: cover;
+  height: 275px;
+  width: 100%;
+}
+
+.coeur {
+  padding-left: 35px;
+}
+
+.titre-menu {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 32 0 0 13px;
+  color: #101010;
+}
+
+.soustitre-menu {
+  margin: 40px 0 12px 10px;
+}
+
+.la-carte {
+  background: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+}
+
+.plat {
+  padding: 15px;
+  margin: 12px 10px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  position: relative;
+}
+
+.sstitres {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.ssstitres {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.prix {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.commander {
+  padding: 20px 0 0 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
