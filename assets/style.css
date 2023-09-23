@@ -64,6 +64,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+body a {
+  text-decoration: none;
+}
 body h1 {
   margin-top: 39px;
   margin-bottom: 15px;
@@ -114,6 +117,7 @@ body .rond {
   top: 50%;
   margin-top: -19px;
   left: -7px;
+  line-height: 24px;
 }
 body .fonctionnement {
   margin: 48px 20px 43px 20px;
@@ -167,6 +171,11 @@ body .carte {
   width: 100%;
   text-align: center;
   color: white;
+}
+body .petitcoeur {
+  position: absolute;
+  right: 21px;
+  bottom: 12px;
 }
 body .les-titres {
   position: relative;
