@@ -66,6 +66,7 @@ body {
 }
 body a {
   text-decoration: none;
+  color: inherit;
 }
 body h1 {
   margin-top: 39px;
@@ -115,7 +116,7 @@ body .rond {
   background: #9356DC;
   position: absolute;
   top: 50%;
-  margin-top: -19px;
+  margin-top: -25px;
   left: -7px;
   line-height: 24px;
 }
@@ -242,7 +243,7 @@ footer ul {
   list-style: none;
 }
 footer li {
-  padding: 0 0 3px 0;
+  padding: 0 0 6px 0;
 }
 
 /* Les menus*/
@@ -253,7 +254,7 @@ footer li {
 }
 
 .coeur {
-  padding-left: 35px;
+  padding-left: 131px;
 }
 
 .titre-menu {
@@ -266,6 +267,10 @@ footer li {
 
 .soustitre-menu {
   margin: 40px 0 12px 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #99E2D0;
+  border-bottom-width: 3px;
+  padding-bottom: 10px;
 }
 
 .la-carte {
@@ -305,6 +310,17 @@ footer li {
 .commander {
   padding: 20px 0 0 0;
   text-align: center;
+}
+
+.relativei {
+  position: relative;
+}
+
+.absolutei {
+  position: absolute;
+  left: 17px;
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
