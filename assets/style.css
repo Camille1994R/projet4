@@ -8,19 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,8 +98,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -39,16 +116,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -74,15 +155,41 @@ body h1 {
   font-size: 24px;
   font-weight: 700;
 }
-body .entête {
-  text-align: center;
-  background: #F6F6F6;
+body button {
+  font-size: 16px;
+  color: #353535;
+}
+body .fa-heart {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  right: 20px;
+  margin-top: -40px;
 }
 body .titres {
   margin: 0px 0 22px 0;
   font-size: 24px;
   font-weight: 700;
   padding: 0 0 0 20px;
+}
+body .entête {
+  text-align: center;
+  background: #F6F6F6;
+}
+body .entête .btn-explorer {
+  width: 218px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  border: none;
+  margin: 22px 0 57px 0;
+}
+body .entête .btn-localisation {
+  padding: 12.5px 0;
+  width: 100%;
+  border: none;
 }
 body .titres-f {
   text-align: left;
@@ -92,21 +199,43 @@ body .soustitres {
   font-weight: 300;
   color: #353535;
 }
-body .btn-explorer {
-  width: 218px;
-  height: 50px;
-  color: #fff;
-  text-align: center;
-  border-radius: 25px;
-  background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); /* à revoir */
+body .fonctionnement {
+  margin: 48px 20px 43px 20px;
+}
+body .fa-mobile-screen-button,
+body .fa-list-ul {
+  color: #7E7E7E;
+}
+body .fa-store {
+  color: #9356DC;
+}
+body .fa-location-dot {
+  margin: 0 17px 0 0;
+}
+body .btn-fonctionnement {
+  border-radius: 20px;
+  box-shadow: 0 4px 15px 0 rgb(0, 0, 0);
   border: none;
-  margin: 22px 0 57px 0;
+  width: 100%;
+  height: 72.379px;
+  margin-bottom: 24px;
+  align-items: center;
 }
-body button {
+body .btn-fonctionnement .etapes {
+  margin: 28px 58px 28px 0;
   font-size: 16px;
-  color: #353535;
+  font-weight: 500;
+  padding-left: 20px;
 }
-body .rond {
+body .btn-fonctionnement .etapes .icone {
+  margin: 27px 23px 27px 25px;
+  flex-shrink: 0;
+}
+body .fonctionnement-item {
+  position: relative;
+  margin: 0 0 25px 0;
+}
+body .fonctionnement-item .rond {
   display: inline-block;
   border-radius: 100%;
   color: white;
@@ -120,52 +249,12 @@ body .rond {
   left: -7px;
   line-height: 24px;
 }
-body .fonctionnement {
-  margin: 48px 20px 43px 20px;
-}
-body .icone {
-  margin: 27px 23px 27px 25px;
-  flex-shrink: 0;
-}
-body .fa-mobile-screen-button, body .fa-list-ul {
-  color: #7E7E7E;
-}
-body .fa-store {
-  color: #9356DC;
-}
-body .fa-location-dot {
-  margin: 0 17px 0 0;
-}
-body .etapes {
-  margin: 28px 58px 28px 0;
-  flex-shrink: 0;
-  font-size: 16px;
-  font-weight: 500;
-}
-body .btn-fonctionnement {
-  border-radius: 20px;
-  box-shadow: 0 4px 15px 0 rgb(0, 0, 0);
-  border: none;
-  width: 100%;
-  height: 72.379px;
-  margin-bottom: 24px;
-  align-items: center;
-}
-body .fonctionnement-item {
-  position: relative;
-  margin: 0 0 25px 0;
-}
-body .btn-localisation {
-  padding: 12.5px 0;
-  width: 100%;
-  border: none;
-}
 body .fullcard {
   margin-bottom: 18px;
   position: relative;
   padding: 0 20px 0 20px;
 }
-body .carte {
+body .fullcard .carte {
   height: 251px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
@@ -173,15 +262,7 @@ body .carte {
   text-align: center;
   color: white;
 }
-body .petitcoeur {
-  position: absolute;
-  right: 21px;
-  bottom: 12px;
-}
-body .les-titres {
-  position: relative;
-}
-body .nouveau {
+body .fullcard .nouveau {
   background-color: #99E2D0;
   position: absolute;
   top: 20px;
@@ -198,23 +279,24 @@ body .les-restaurants {
   padding: 55px 0px 60px 0px;
   width: 100%;
 }
-body .les-restaurants .titre-carte {
+body .les-restaurants .les-titres {
+  position: relative;
+}
+body .les-restaurants .les-titres .soustitre-carte {
+  margin: 0 80px 12px 12px;
+  font-size: 17px;
+  font-weight: 300;
+}
+body .les-restaurants .les-titres .titre-carte {
   font-size: 18px;
   font-weight: 700;
   color: #000;
   margin: 16px 60px 5px 12px;
 }
-body .les-restaurants .soustitre-carte {
-  margin: 0 80px 12px 12px;
-  font-size: 17px;
-  font-weight: 300;
-}
-body .fa-heart {
+body .les-restaurants .les-titres .petitcoeur {
   position: absolute;
-  height: 22px;
-  width: 22px;
-  right: 20px;
-  margin-top: -40px;
+  right: 21px;
+  bottom: 12px;
 }
 
 header {
@@ -267,16 +349,23 @@ footer li {
 
 .soustitre-menu {
   margin: 40px 0 12px 10px;
-  border-bottom-style: solid;
-  border-bottom-color: #99E2D0;
-  border-bottom-width: 3px;
-  padding-bottom: 10px;
+}
+.soustitre-menu::after {
+  content: " ";
+  border-bottom: solid #99E2D0;
+  height: 3px;
+  width: 48px;
+  display: block;
+  padding-bottom: 3px;
 }
 
 .la-carte {
   background: #F6F6F6;
   border-radius: 40px 40px 0 0;
   width: 100%;
+  position: relative;
+  margin-top: -40;
+  padding: 32px 0 40px 0;
 }
 
 .plat {
@@ -287,19 +376,16 @@ footer li {
   border-radius: 15px;
   position: relative;
 }
-
-.sstitres {
+.plat .sstitres {
   font-weight: 500;
   font-size: 18px;
   padding-bottom: 5px;
 }
-
-.ssstitres {
+.plat .ssstitres {
   font-size: 15px;
   font-weight: 300;
 }
-
-.prix {
+.plat .prix {
   position: absolute;
   bottom: 15px;
   right: 15px;
@@ -311,12 +397,21 @@ footer li {
   padding: 20px 0 0 0;
   text-align: center;
 }
+.commander .btn-explorer {
+  width: 218px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  border: none;
+  margin: 22px 0 57px 0;
+}
 
 .relativei {
   position: relative;
 }
-
-.absolutei {
+.relativei .absolutei {
   position: absolute;
   left: 17px;
   width: 30px;

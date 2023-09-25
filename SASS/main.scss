@@ -1,4 +1,4 @@
-@import "variables"; 
+@import "variables";
 @import "buttons";
 @import "menu";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
@@ -9,48 +9,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -58,7 +145,7 @@ table {
 
 
 body {
-    font-family: 'Roboto' ;
+    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
 
@@ -74,9 +161,17 @@ body {
         font-weight: $titres-weight;
     }
 
-    .entête {
-        text-align: center;
-        background: $background-main;
+    button {
+        font-size: $size-btn;
+        color: $color-btn;
+    }
+
+    .fa-heart {
+        position: absolute;
+        height: 22px;
+        width: 22px;
+        right: 20px;
+        margin-top: -40px;
     }
 
     .titres {
@@ -85,6 +180,31 @@ body {
         font-weight: $titres-weight;
         padding: 0 0 0 20px;
     }
+    
+    
+    
+    .entête {
+        text-align: center;
+        background: $background-main;  
+        
+            .btn-explorer {
+                width: 218px;
+                height: 50px;
+                color: $color-pbtn;
+                text-align: center;
+                border-radius: 25px;
+                background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+                border: none;
+                margin: 22px 0 57px 0;
+            }
+
+            .btn-localisation {
+                padding: 12.5px 0;
+                width: 100%;
+                border: none;
+            }  
+    }
+
 
     .titres-f {
         text-align: left;
@@ -96,48 +216,14 @@ body {
         color: $background-footer;
     }
 
-    .btn-explorer {
-        width: 218px;
-        height: 50px;
-        color: $color-pbtn;
-        text-align: center;
-        border-radius: 25px;
-        background: var(--boutton-color,linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); /* à revoir */
-        border: none;
-        margin: 22px 0 57px 0;
-    }
-    
-    button {
-        font-size: $size-btn;
-        color: $color-btn;
-            
-    }
-    
-    .rond {
-        display: inline-block;
-        border-radius: 100%;
-        color: white;
-        text-align: center;
-        width: 24px;
-        height: 24px;
-        background: $bouton-color;
-        position: absolute;
-        top: 50%;
-        margin-top: -25px;
-        left: -7px;
-        line-height: 24px;
-        }
-
     .fonctionnement {
         margin: 48px 20px 43px 20px;
+
     }
 
-    .icone {
-        margin: 27px 23px 27px 25px;
-        flex-shrink: 0;
-    }
-
-    .fa-mobile-screen-button, .fa-list-ul {
+    
+    .fa-mobile-screen-button,
+    .fa-list-ul {
         color: #7E7E7E;
     }
 
@@ -150,64 +236,71 @@ body {
     }
 
 
-    .etapes {
-        margin: 28px 58px 28px 0;
-        flex-shrink: 0;
-        font-size: 16px;
-        font-weight: 500;
-    }
 
     .btn-fonctionnement {
         border-radius: 20px;
-        box-shadow: 0 4px 15px 0 rgba(0,0,0,15);
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 15);
         border: none;
         width: 100%;
         height: 72.379px;
         margin-bottom: 24px;
-        align-items: center;
+        align-items: center; 
         
+            .etapes {
+                margin: 28px 58px 28px 0;
+                font-size: 16px;
+                font-weight: 500;
+                padding-left: 20px;
+
+            .icone {
+                margin: 27px 23px 27px 25px;
+                flex-shrink: 0;
+                }
+            
+    }
+
     }
 
     .fonctionnement-item {
         position: relative;
-        margin: 0 0 25px 0;
+        margin: 0 0 25px 0; 
+         
+
+            .rond {
+                display: inline-block;
+                border-radius: 100%;
+                color: white;
+                text-align: center;
+                width: 24px;
+                height: 24px;
+                background: $bouton-color;
+                position: absolute;
+                top: 50%;
+                margin-top: -25px;
+                left: -7px;
+                line-height: 24px;
+            }
     }
 
-    .btn-localisation {
-        padding: 12.5px 0;
-        width: 100%;
-        border: none;
-    }
+   
 
-    
+
     .fullcard {
-       margin-bottom: 18px;
-       position: relative;
-       padding: 0 20px 0 20px;
-    }
-
-    .carte {
-        height: 251px;
-        border-radius: 15px 15px 0 0;
-        object-fit: cover; 
-        width: 100%;
-        
-        text-align: center;
-        color: white;       
-    }
-
-    .petitcoeur {
-        position: absolute;
-        right: 21px;
-        bottom: 12px;
-
-    }
-
-    .les-titres {
+        margin-bottom: 18px;
         position: relative;
-    }
+        padding: 0 20px 0 20px;
+
+        .carte {
+            height: 251px;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+            width: 100%;
     
-    .nouveau {
+            text-align: center;
+            color: white;
+        }
+
+        .nouveau {
             background-color: $background-info;
             position: absolute;
             top: 20px;
@@ -218,37 +311,41 @@ body {
             text-align: center;
             border-radius: 2px;
         }
-    
+    }
+
     
 
     .les-restaurants {
         background-color: $background-main;
         text-align: left;
         padding: 55px 0px 60px 0px;
-        width: 100%;    
+        width: 100%;
+            
+        .les-titres {
+            position: relative;
+            
+                .soustitre-carte {
+                    margin: 0 80px 12px 12px;
+                    font-size: 17px;
+                    font-weight: 300;
+                }
+
+                .titre-carte {
+                    font-size: $titre-carte-size;
+                    font-weight: $titre-carte-weight;
+                    color: $color-titre;
+                    margin: 16px 60px 5px 12px;
+                } 
+                
+                .petitcoeur {
+                    position: absolute;
+                    right: 21px;
+                    bottom: 12px;
+                }
+                
+        }   
     }
-    
- .les-restaurants   .titre-carte {
-        font-size: $titre-carte-size;
-        font-weight: $titre-carte-weight;
-        color: $color-titre;
-        margin: 16px 60px 5px 12px ;
-             }
 
-
-.les-restaurants .soustitre-carte {
-    margin: 0 80px 12px 12px;
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.fa-heart {
-    position: absolute;
-    height: 22px;
-    width: 22px;
-    right: 20px;
-    margin-top: -40px;
-    }
 
 }
 
@@ -257,7 +354,7 @@ header {
 
     text-align: center;
     margin: 14px 0;
-    
+
     .logohead {
         height: 36px;
         background-color: white;
@@ -280,18 +377,13 @@ footer {
     }
 
     ul {
-        list-style: none;      
+        list-style: none;
     }
 
     li {
         padding: 0 0 6px 0;
     }
 }
-
-
-
-
-
 
 
 
@@ -306,7 +398,7 @@ footer {
 }
 
 .coeur {
-    padding-left: 131px;    
+    padding-left: 131px;
 }
 
 .titre-menu {
@@ -319,10 +411,18 @@ footer {
 
 .soustitre-menu {
     margin: 40px 0 12px 10px;
-    border-bottom-style: solid;
-    border-bottom-color: #99E2D0;
-    border-bottom-width: 3px;
-    padding-bottom: 10px;
+   
+
+    &::after {
+        content: " ";
+        border-bottom: solid #99E2D0;
+        height: 3px;
+        width: 48px;
+        display: block;
+        padding-bottom: 3px;
+
+        
+    }
 
 }
 
@@ -331,7 +431,10 @@ footer {
     background: $background-main;
     border-radius: 40px 40px 0 0;
     width: 100%;
-    }
+    position: relative;
+    margin-top: -40;
+    padding: 32px 0 40px 0;
+}
 
 .plat {
     padding: 15px;
@@ -340,39 +443,55 @@ footer {
     box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.10);
     border-radius: 15px;
     position: relative;
+
+        .sstitres {
+            font-weight: $menu-weight;
+            font-size: $titre-carte-size;
+            padding-bottom: 5px;
+        }
+
+        .ssstitres {
+            font-size: $menu-soustitres-size;
+            font-weight: $soustitres-weight;
+        }
+
+        .prix {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            font-weight: $p-weight;
+            font-size: $menu-soustitres-size;
+        }
 }
 
-.sstitres {
-    font-weight: $menu-weight;
-    font-size: $titre-carte-size;
-    padding-bottom: 5px;
-}
 
-.ssstitres {
-    font-size: $menu-soustitres-size;
-    font-weight: $soustitres-weight;
-}
 
-.prix {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    font-weight: $p-weight;
-    font-size: $menu-soustitres-size;
-}
+
 
 .commander {
     padding: 20px 0 0 0;
     text-align: center;
+
+    .btn-explorer {
+        width: 218px;
+        height: 50px;
+        color: $color-pbtn;
+        text-align: center;
+        border-radius: 25px;
+        background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+        border: none;
+        margin: 22px 0 57px 0;
+    }
 }
 
 .relativei {
     position: relative;
+    
+        .absolutei {
+            position: absolute;
+            left: 17px;
+            width: 30px;
+            height: 30px;
+    }
 }
 
-.absolutei {
-    position: absolute;
-    left: 17px;
-    width: 30px;
-    height: 30px;
-}
