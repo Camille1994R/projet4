@@ -411,7 +411,8 @@ footer {
 }
 
 .coeur {
-    padding-left: 43px;
+    position: absolute;
+    right: 43px;
 }
 
 .titre-menu {
@@ -508,3 +509,19 @@ footer {
     }
 }
 
+
+
+@media only screen and (min-width: 600px) {
+
+    .fonctionnement {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+}

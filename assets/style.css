@@ -345,7 +345,8 @@ footer li {
 }
 
 .coeur {
-  padding-left: 43px;
+  position: absolute;
+  right: 43px;
 }
 
 .titre-menu {
@@ -425,6 +426,17 @@ footer li {
   left: 17px;
   width: 30px;
   height: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
