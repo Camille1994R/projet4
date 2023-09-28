@@ -172,6 +172,16 @@ body .titres {
   font-weight: 700;
   padding: 0 0 0 20px;
 }
+body .fa-mobile-screen-button,
+body .fa-list-ul {
+  color: #7E7E7E;
+}
+body .fa-store {
+  color: #9356DC;
+}
+body .fa-location-dot {
+  margin: 0 17px 0 0;
+}
 body .entête {
   text-align: center;
   background: #F6F6F6;
@@ -207,16 +217,6 @@ body .soustitres {
 }
 body .fonctionnement {
   margin: 48px 20px 43px 20px;
-}
-body .fa-mobile-screen-button,
-body .fa-list-ul {
-  color: #7E7E7E;
-}
-body .fa-store {
-  color: #9356DC;
-}
-body .fa-location-dot {
-  margin: 0 17px 0 0;
 }
 body .btn-fonctionnement {
   border-radius: 20px;
@@ -464,6 +464,17 @@ footer li {
   }
   body .fonctionnementitem .fonctionnement-item {
     width: 322px;
+  }
+  body .les-restaurants .allcards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 50px;
+  }
+  body .les-restaurants .allcards .fullcard {
+    width: 490px;
+    height: 251px;
   }
   footer {
     display: flex;

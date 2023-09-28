@@ -181,6 +181,19 @@ body {
         padding: 0 0 0 20px;
     }
 
+    .fa-mobile-screen-button,
+    .fa-list-ul {
+        color: #7E7E7E;
+    }
+
+    .fa-store {
+        color: $bouton-color;
+    }
+
+    .fa-location-dot {
+        margin: 0 17px 0 0;
+    }
+
 
 
     .entête {
@@ -226,20 +239,6 @@ body {
     .fonctionnement {
         margin: 48px 20px 43px 20px;
 
-    }
-
-
-    .fa-mobile-screen-button,
-    .fa-list-ul {
-        color: #7E7E7E;
-    }
-
-    .fa-store {
-        color: $bouton-color;
-    }
-
-    .fa-location-dot {
-        margin: 0 17px 0 0;
     }
 
 
@@ -562,6 +561,28 @@ footer {
 
             }
         }
+
+
+    .les-restaurants {
+
+            
+        
+        .allcards {
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self: center;
+            gap: 50px;
+                
+
+                .fullcard {
+                    width: 490px;
+                    height: 251px;
+                
+            }
+        }
+    }    
 }
 
     footer {
