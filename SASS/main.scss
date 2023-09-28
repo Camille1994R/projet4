@@ -180,36 +180,36 @@ body {
         font-weight: $titres-weight;
         padding: 0 0 0 20px;
     }
-    
-    
-    
+
+
+
     .entête {
         text-align: center;
-        background: $background-main;  
-        
-            .btn-explorer {
-                width: 218px;
-                height: 50px;
-                color: $color-pbtn;
-                text-align: center;
+        background: $background-main;
+
+        .btn-explorer {
+            width: 218px;
+            height: 50px;
+            color: $color-pbtn;
+            text-align: center;
+            border-radius: 25px;
+            background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+            border: none;
+            margin: 22px 0 57px 0;
+            transition: width 2s ease;
+
+            &:hover {
                 border-radius: 25px;
-                background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-                border: none;
-                margin: 22px 0 57px 0;
-                transition: width 2s ease;
-
-                &:hover {
-                    border-radius: 25px;
-                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-                }
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
             }
+        }
 
-            .btn-localisation {
-                padding: 12.5px 0;
-                width: 100%;
-                border: none;
-            }  
+        .btn-localisation {
+            padding: 12.5px 0;
+            width: 100%;
+            border: none;
+        }
     }
 
 
@@ -228,7 +228,7 @@ body {
 
     }
 
-    
+
     .fa-mobile-screen-button,
     .fa-list-ul {
         color: #7E7E7E;
@@ -251,45 +251,49 @@ body {
         width: 100%;
         height: 72.379px;
         margin-bottom: 24px;
-        align-items: center; 
-        
-            .etapes {
-                margin: 28px 58px 28px 0;
-                font-size: 16px;
-                font-weight: 500;
-                padding-left: 20px;
+        align-items: center;
+
+        .etapes {
+            margin: 28px 58px 28px 0;
+            font-size: 16px;
+            font-weight: 500;
+            padding-left: 20px;
 
             .icone {
                 margin: 27px 23px 27px 25px;
                 flex-shrink: 0;
-                }
-            
-    }
+            }
+
+        }
 
     }
 
     .fonctionnement-item {
         position: relative;
-        margin: 0 0 25px 0; 
-         
+        margin: 0 0 25px 0;
 
-            .rond {
-                display: inline-block;
-                border-radius: 100%;
-                color: white;
-                text-align: center;
-                width: 24px;
-                height: 24px;
-                background: $bouton-color;
-                position: absolute;
-                top: 50%;
-                margin-top: -25px;
-                left: -7px;
-                line-height: 24px;
-            }
+        .etapes-item {
+            align-items: center;
+        }
+
+
+        .rond {
+            display: inline-block;
+            border-radius: 100%;
+            color: white;
+            text-align: center;
+            width: 24px;
+            height: 24px;
+            background: $bouton-color;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            left: -7px;
+            line-height: 24px;
+        }
     }
 
-   
+
 
 
     .fullcard {
@@ -302,7 +306,7 @@ body {
             border-radius: 15px 15px 0 0;
             object-fit: cover;
             width: 100%;
-    
+
             text-align: center;
             color: white;
         }
@@ -320,43 +324,43 @@ body {
         }
     }
 
-    
+
 
     .les-restaurants {
         background-color: $background-main;
         text-align: left;
         padding: 55px 0px 60px 0px;
         width: 100%;
-            
+
         .les-titres {
             position: relative;
-            
-                .soustitre-carte {
-                    margin: 0 80px 12px 12px;
-                    font-size: 17px;
-                    font-weight: 300;
-                }
 
-                .titre-carte {
-                    font-size: $titre-carte-size;
-                    font-weight: $titre-carte-weight;
-                    color: $color-titre;
-                    margin: 16px 60px 5px 12px;
-                } 
-                
-                .petitcoeur {
-                    position: absolute;
-                    right: 21px;
-                    bottom: 12px;
-                    
+            .soustitre-carte {
+                margin: 0 80px 12px 12px;
+                font-size: 17px;
+                font-weight: 300;
+            }
 
-                    &:active{
-                        background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        
-                    }
+            .titre-carte {
+                font-size: $titre-carte-size;
+                font-weight: $titre-carte-weight;
+                color: $color-titre;
+                margin: 16px 60px 5px 12px;
+            }
+
+            .petitcoeur {
+                position: absolute;
+                right: 21px;
+                bottom: 12px;
+
+
+                &:active {
+                    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+
                 }
-                
-        }   
+            }
+
+        }
     }
 
 
@@ -425,7 +429,7 @@ footer {
 
 .soustitre-menu {
     margin: 40px 0 12px 10px;
-   
+
 
     &::after {
         content: " ";
@@ -435,7 +439,7 @@ footer {
         display: block;
         padding-bottom: 3px;
 
-        
+
     }
 
 }
@@ -458,28 +462,54 @@ footer {
     border-radius: 15px;
     position: relative;
 
-        .sstitres {
-            font-weight: $menu-weight;
-            font-size: $titre-carte-size;
-            padding-bottom: 5px;
-        }
+    &:hover .btnvalide {
+        width: 49px;
+    }
 
-        .ssstitres {
-            font-size: $menu-soustitres-size;
-            font-weight: $soustitres-weight;
-        }
+    &:hover .prix {
+        right: 59px;
+    }
 
-        .prix {
-            position: absolute;
-            bottom: 15px;
-            right: 15px;
-            font-weight: $p-weight;
-            font-size: $menu-soustitres-size;
-        }
+
+    .sstitres {
+        font-weight: $menu-weight;
+        font-size: $titre-carte-size;
+        padding-bottom: 5px;
+    }
+
+    .ssstitres {
+        font-size: $menu-soustitres-size;
+        font-weight: $soustitres-weight;
+    }
+
+    .prix {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        font-weight: $p-weight;
+        font-size: $menu-soustitres-size;
+    }
+
+    .btnvalide {
+        position: absolute;
+        height: 110%;
+        right: 0px;
+        top: 0px;
+        width: 0%;
+        animation-duration: 3s;
+        animation-name: slide;
+
+    }
 }
 
 
+.absolutei .plat .coeur {
 
+    &:active .commander {
+        background-color: lightblue;
+        border: skyblue;
+    }
+}
 
 
 .commander {
@@ -500,12 +530,12 @@ footer {
 
 .relativei {
     position: relative;
-    
-        .absolutei {
-            position: absolute;
-            left: 17px;
-            width: 30px;
-            height: 30px;
+
+    .absolutei {
+        position: absolute;
+        left: 17px;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -513,15 +543,30 @@ footer {
 
 @media only screen and (min-width: 600px) {
 
-    .fonctionnement {
-        display: flex;
-        flex-direction: row;
-    }
+ body {   
+        .titres {
+            text-align: center;
+            padding-right: 850px;
+
+        }
+
+        .fonctionnementitem {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+
+            .fonctionnement-item {
+                width: 322px;
+                
+
+            }
+        }
+}
 
     footer {
         display: flex;
         flex-direction: row-reverse;
-        
-    }
 
+    }
 }

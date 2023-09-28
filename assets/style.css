@@ -241,6 +241,9 @@ body .fonctionnement-item {
   position: relative;
   margin: 0 0 25px 0;
 }
+body .fonctionnement-item .etapes-item {
+  align-items: center;
+}
 body .fonctionnement-item .rond {
   display: inline-block;
   border-radius: 100%;
@@ -386,6 +389,12 @@ footer li {
   border-radius: 15px;
   position: relative;
 }
+.plat:hover .btnvalide {
+  width: 49px;
+}
+.plat:hover .prix {
+  right: 59px;
+}
 .plat .sstitres {
   font-weight: 500;
   font-size: 18px;
@@ -401,6 +410,20 @@ footer li {
   right: 15px;
   font-weight: 700;
   font-size: 15px;
+}
+.plat .btnvalide {
+  position: absolute;
+  height: 110%;
+  right: 0px;
+  top: 0px;
+  width: 0%;
+  animation-duration: 3s;
+  animation-name: slide;
+}
+
+.absolutei .plat .coeur:active .commander {
+  background-color: lightblue;
+  border: skyblue;
 }
 
 .commander {
@@ -429,9 +452,18 @@ footer li {
 }
 
 @media only screen and (min-width: 600px) {
-  .fonctionnement {
+  body .titres {
+    text-align: center;
+    padding-right: 850px;
+  }
+  body .fonctionnementitem {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+  body .fonctionnementitem .fonctionnement-item {
+    width: 322px;
   }
   footer {
     display: flex;
