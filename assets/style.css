@@ -140,6 +140,10 @@ table {
 }
 
 /* main */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto";
   display: flex;
@@ -163,8 +167,6 @@ body .fa-heart {
   position: absolute;
   height: 22px;
   width: 22px;
-  right: 20px;
-  margin-top: -40px;
 }
 body .titres {
   margin: 0px 0 22px 0;
@@ -195,7 +197,7 @@ body .entête .btn-explorer {
   background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
   border: none;
   margin: 22px 0 57px 0;
-  transition: width 2s ease;
+  transition: all 0.5s ease-in-out;
 }
 body .entête .btn-explorer:hover {
   border-radius: 25px;
@@ -287,6 +289,8 @@ body .les-restaurants {
   text-align: left;
   padding: 55px 0px 60px 0px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 body .les-restaurants .les-titres {
   position: relative;
@@ -302,13 +306,24 @@ body .les-restaurants .les-titres .titre-carte {
   color: #000;
   margin: 16px 60px 5px 12px;
 }
-body .les-restaurants .les-titres .petitcoeur {
+body .les-restaurants .les-titres .petitcoeurvide {
   position: absolute;
   right: 21px;
   bottom: 12px;
 }
-body .les-restaurants .les-titres .petitcoeur:active {
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+body .les-restaurants .les-titres .petitcoeurfull {
+  position: absolute;
+  right: 21px;
+  bottom: 12px;
+  opacity: 0;
+  background: linear-gradient(#9356DC -11.44%, #FF79DA 123.93%);
+  transition: all 0.4s ease-in-out;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+body .les-restaurants .les-titres .petitcoeurfull:hover {
+  opacity: 1;
 }
 
 header {
@@ -347,9 +362,24 @@ footer li {
   width: 100%;
 }
 
-.coeur {
+.coeurvide {
   position: absolute;
   right: 43px;
+  opacity: 1;
+}
+
+.coeurfull {
+  position: absolute;
+  right: 43px;
+  opacity: 0;
+  background: linear-gradient(#9356DC -11.44%, #FF79DA 123.93%);
+  transition: all 0.4s ease-in-out;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.coeurfull:hover {
+  opacity: 1;
 }
 
 .titre-menu {
@@ -391,6 +421,7 @@ footer li {
 }
 .plat:hover .btnvalide {
   width: 49px;
+  position: absolute;
 }
 .plat:hover .prix {
   right: 59px;
@@ -417,8 +448,6 @@ footer li {
   right: 0px;
   top: 0px;
   width: 0%;
-  animation-duration: 3s;
-  animation-name: slide;
 }
 
 .absolutei .plat .coeur:active .commander {
@@ -465,20 +494,33 @@ footer li {
   body .fonctionnementitem .fonctionnement-item {
     width: 322px;
   }
+  body .les-restaurants {
+    display: flex;
+    flex-direction: column;
+  }
   body .les-restaurants .allcards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-self: center;
     gap: 50px;
+    justify-content: center;
+    gap: 75px;
   }
   body .les-restaurants .allcards .fullcard {
     width: 490px;
     height: 251px;
+    margin: 25px 50px;
   }
   footer {
     display: flex;
     flex-direction: row-reverse;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer .logofooter {
+    margin: 30px 0 30px 16px;
   }
 }
 

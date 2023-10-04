@@ -142,7 +142,9 @@ table {
 
 
 /* main */
-
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto';
@@ -170,8 +172,7 @@ body {
         position: absolute;
         height: 22px;
         width: 22px;
-        right: 20px;
-        margin-top: -40px;
+        
     }
 
     .titres {
@@ -209,12 +210,14 @@ body {
             background: var(--boutton-color, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
             border: none;
             margin: 22px 0 57px 0;
-            transition: width 2s ease;
+            transition: all 0.5s ease-in-out;
+            
 
             &:hover {
                 border-radius: 25px;
                 background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+                
             }
         }
 
@@ -330,6 +333,8 @@ body {
         text-align: left;
         padding: 55px 0px 60px 0px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
 
         .les-titres {
             position: relative;
@@ -347,15 +352,26 @@ body {
                 margin: 16px 60px 5px 12px;
             }
 
-            .petitcoeur {
+            .petitcoeurvide {
                 position: absolute;
                 right: 21px;
                 bottom: 12px;
+            }
+            .petitcoeurfull{
+                position: absolute;
+                right: 21px;
+                bottom: 12px;
+                opacity: 0;
+                
+                background: linear-gradient( #9356DC -11.44%, #FF79DA 123.93%);
+                transition: all 0.4s ease-in-out;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
 
-
-                &:active {
-                    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-
+                &:hover {
+                    opacity: 1;
+                    
                 }
             }
 
@@ -413,9 +429,26 @@ footer {
     width: 100%;
 }
 
-.coeur {
+.coeurvide {
     position: absolute;
     right: 43px;
+    opacity: 1;
+}
+
+.coeurfull {
+    position: absolute;
+    right: 43px;
+    opacity: 0;
+    background: linear-gradient( #9356DC -11.44%, #FF79DA 123.93%);
+    transition: all 0.4s ease-in-out;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    &:hover {
+        opacity: 1;
+        
+    }
 }
 
 .titre-menu {
@@ -460,9 +493,12 @@ footer {
     box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.10);
     border-radius: 15px;
     position: relative;
+   
+
 
     &:hover .btnvalide {
         width: 49px;
+        position: absolute;
     }
 
     &:hover .prix {
@@ -495,9 +531,6 @@ footer {
         right: 0px;
         top: 0px;
         width: 0%;
-        animation-duration: 3s;
-        animation-name: slide;
-
     }
 }
 
@@ -564,7 +597,8 @@ footer {
 
 
     .les-restaurants {
-
+        display: flex;
+        flex-direction: column;
             
         
         .allcards {
@@ -572,13 +606,16 @@ footer {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-self: center;
             gap: 50px;
+            justify-content: center;
+            gap : 75px;
                 
 
                 .fullcard {
                     width: 490px;
                     height: 251px;
+                    margin: 25px 50px;
+                    
                 
             }
         }
@@ -588,6 +625,19 @@ footer {
     footer {
         display: flex;
         flex-direction: row-reverse;
+
+
+        ul {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .logofooter {
+            margin: 30px 0 30px 16px;
+
+        
+
+        }
 
     }
 }
