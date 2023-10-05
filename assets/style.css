@@ -494,19 +494,29 @@ footer li {
   body .fonctionnementitem .fonctionnement-item {
     width: 322px;
   }
-  body .les-restaurants {
+  body .la-carte {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  body main {
     display: flex;
     flex-direction: column;
   }
-  body .les-restaurants .allcards {
+  body main .les-restaurants {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .allcards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
     justify-content: center;
     gap: 75px;
   }
-  body .les-restaurants .allcards .fullcard {
+  body main .allcards .fullcard {
     width: 490px;
     height: 251px;
     margin: 25px 50px;
@@ -517,7 +527,11 @@ footer li {
   }
   footer ul {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    margin: 35px 0 30px 0;
+  }
+  footer ul li {
+    padding: 0 5px;
   }
   footer .logofooter {
     margin: 30px 0 30px 16px;
