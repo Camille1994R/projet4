@@ -173,12 +173,6 @@ body {
         color: $color-btn;
     }
 
-    .fa-heart {
-        position: absolute;
-        height: 22px;
-        width: 22px;
-        
-    }
 
     .titres {
         margin: 0px 0 22px 0;
@@ -359,16 +353,17 @@ body {
                 margin: 16px 60px 5px 12px;
             }
 
-            .petitcoeurvide {
+            .coeurvide {
                 position: absolute;
                 right: 21px;
                 bottom: 12px;
+                opacity: 1;
             }
-            .petitcoeurfull{
+            .coeurfull{
                 position: absolute;
-                right: 21px;
+                right: 50px;
                 bottom: 12px;
-                opacity: 0;
+                opacity: 1;
                 
                 background: linear-gradient( #9356DC -11.44%, #FF79DA 123.93%);
                 transition: all 0.4s ease-in-out;
@@ -502,10 +497,13 @@ footer {
             box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.10);
             border-radius: 15px;
             position: relative;
+            
+            
    
                 &:hover .btnvalide {
                     
                     opacity: 1;
+                    transform: translateX(0px);
                 }
 
                 &:hover .prix {
@@ -530,6 +528,7 @@ footer {
             font-weight: $p-weight;
             font-size: $menu-soustitres-size;
             transition-duration: 1s;
+            overflow: hidden;
             }    
 
         }
@@ -542,7 +541,8 @@ footer {
             height: 70px;
             opacity: 0;
             top : 0px;
-            transition-duration: 1s;
+            transform: translateX(50px);
+            transition: all 0.5s;
             overflow: hidden;
             transform-origin: right 50%;
         }
