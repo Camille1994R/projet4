@@ -305,24 +305,23 @@ body .les-restaurants .les-titres .titre-carte {
   color: #000;
   margin: 16px 60px 5px 12px;
 }
-body .les-restaurants .les-titres .coeurvide {
+body .les-restaurants .les-titres .petitcoeurvide {
   position: absolute;
   right: 21px;
   bottom: 12px;
-  opacity: 1;
 }
-body .les-restaurants .les-titres .coeurfull {
+body .les-restaurants .les-titres .petitcoeurfull {
   position: absolute;
-  right: 50px;
+  right: 21px;
   bottom: 12px;
-  opacity: 1;
+  opacity: 0;
   background: linear-gradient(#9356DC -11.44%, #FF79DA 123.93%);
   transition: all 0.4s ease-in-out;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-body .les-restaurants .les-titres .coeurfull:hover {
+body .les-restaurants .les-titres .petitcoeurfull:hover {
   opacity: 1;
 }
 
@@ -369,6 +368,9 @@ footer li {
   position: relative;
   margin-top: -40px;
   padding: 32px 0 40px 0;
+}
+.la-carte .arrivee1 {
+  animation: arriveemenus 4s;
 }
 .la-carte .titre-menu {
   font-family: Shrikhand;
@@ -480,6 +482,28 @@ footer li {
   left: 17px;
   width: 30px;
   height: 30px;
+}
+
+@keyframes arriveemenus {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.arrivee2 {
+  animation: arriveemenus 6s;
+}
+
+.arrivee3 {
+  animation: arriveemenus 8s;
+}
+
+.arrivee4 {
+  animation: arriveemenus 10s;
 }
 
 @media only screen and (min-width: 1070px) {
