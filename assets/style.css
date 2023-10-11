@@ -372,6 +372,15 @@ footer li {
 .la-carte .arrivee1 {
   animation: arriveemenus 4s;
 }
+.la-carte .arrivee2 {
+  animation: arriveemenus 6s;
+}
+.la-carte .arrivee3 {
+  animation: arriveemenus 8s;
+}
+.la-carte .arrivee4 {
+  animation: arriveemenus 10s;
+}
 .la-carte .titre-menu {
   font-family: Shrikhand;
   font-size: 34px;
@@ -494,18 +503,6 @@ footer li {
     opacity: 1;
   }
 }
-.arrivee2 {
-  animation: arriveemenus 6s;
-}
-
-.arrivee3 {
-  animation: arriveemenus 8s;
-}
-
-.arrivee4 {
-  animation: arriveemenus 10s;
-}
-
 @media only screen and (min-width: 1070px) {
   body .titres {
     text-align: center;
@@ -550,6 +547,9 @@ footer li {
   footer {
     display: flex;
     flex-direction: row-reverse;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 0;
   }
   footer ul {
     display: flex;
@@ -561,6 +561,7 @@ footer li {
   }
   footer .logofooter {
     margin: 30px 0 30px 16px;
+    padding-right: 0;
   }
 }
 

@@ -442,6 +442,19 @@ footer {
             animation: arriveemenus 4s;
             }
 
+        .arrivee2 {
+            animation: arriveemenus 6s;
+            }
+            
+        .arrivee3 {
+            animation: arriveemenus 8s;
+            
+            }
+            
+        .arrivee4 {
+            animation: arriveemenus 10s;
+            }
+
         .titre-menu {
             font-family: Shrikhand;
             font-size: 34px;
@@ -595,18 +608,7 @@ footer {
 
 
 
-.arrivee2 {
-    animation: arriveemenus 6s;
-}
 
-.arrivee3 {
-    animation: arriveemenus 8s;
-
-}
-
-.arrivee4 {
-    animation: arriveemenus 10s;
-}
 
 @media only screen and (min-width: 1070px) {
 
@@ -672,6 +674,9 @@ main {
     footer {
         display: flex;
         flex-direction: row-reverse;
+        padding-bottom: 0;
+        padding-right: 0;
+        margin-bottom: 0;
 
 
         ul {
@@ -686,6 +691,7 @@ main {
 
         .logofooter {
             margin: 30px 0 30px 16px;
+            padding-right: 0;
 
         
 
