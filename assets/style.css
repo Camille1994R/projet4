@@ -152,6 +152,7 @@ body {
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
+  animation: loadingpage 2s ease-in-out;
 }
 body a {
   text-decoration: none;
@@ -493,6 +494,17 @@ footer li {
   height: 30px;
 }
 
+/* les Keyframes*/
+@keyframes loadingpage {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
 @keyframes arriveemenus {
   from {
     transform: translateX(-500px);
