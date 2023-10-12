@@ -222,7 +222,7 @@ body .fonctionnement {
 }
 body .btn-fonctionnement {
   border-radius: 20px;
-  box-shadow: 0 4px 15px 0 rgb(0, 0, 0);
+  box-shadow: 0 4px 15px 0 rgb(54, 69, 79);
   border: none;
   width: 100%;
   height: 72.379px;
@@ -232,7 +232,7 @@ body .btn-fonctionnement {
 body .btn-fonctionnement .etapes {
   margin: 28px 58px 28px 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   padding-left: 20px;
 }
 body .btn-fonctionnement .etapes .icone {
@@ -294,6 +294,8 @@ body .les-restaurants {
 }
 body .les-restaurants .les-titres {
   position: relative;
+  background: white;
+  padding: 10px 0;
 }
 body .les-restaurants .les-titres .soustitre-carte {
   margin: 0 80px 12px 12px;
@@ -309,7 +311,7 @@ body .les-restaurants .les-titres .titre-carte {
 body .les-restaurants .les-titres .petitcoeurvide {
   position: absolute;
   right: 21px;
-  bottom: 12px;
+  bottom: 28px;
 }
 body .les-restaurants .les-titres .petitcoeurfull {
   position: absolute;
@@ -464,7 +466,7 @@ footer li {
   opacity: 0;
   top: 0px;
   transform: translateX(50px);
-  transition: all 0.5s;
+  transition: all 1s;
   overflow: hidden;
   transform-origin: right 50%;
 }
@@ -539,6 +541,7 @@ footer li {
   body main {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
   }
   body main .les-restaurants {
     display: flex;
