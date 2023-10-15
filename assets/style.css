@@ -152,7 +152,7 @@ body {
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
-  animation: loadingpage 2s ease-in-out;
+  position: relative;
 }
 body a {
   text-decoration: none;
@@ -167,6 +167,30 @@ body h1 {
 body button {
   font-size: 16px;
   color: #353535;
+}
+body .chargement {
+  background: #101010;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  animation: boiteloader 3s linear forwards;
+  position: absolute;
+}
+body .chargement .loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 3s linear;
+  position: absolute;
+  justify-content: center;
+  top: 200px;
+  right: 47%;
 }
 body .titres {
   margin: 0px 0 22px 0;
@@ -316,7 +340,7 @@ body .les-restaurants .les-titres .petitcoeurvide {
 body .les-restaurants .les-titres .petitcoeurfull {
   position: absolute;
   right: 21px;
-  bottom: 12px;
+  bottom: 28px;
   opacity: 0;
   background: linear-gradient(#9356DC -11.44%, #FF79DA 123.93%);
   transition: all 0.4s ease-in-out;
@@ -497,14 +521,20 @@ footer li {
 }
 
 /* les Keyframes*/
-@keyframes loadingpage {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-  to {
+@keyframes boiteloader {
+  0% {
     opacity: 1;
-    transform: rotateX(0deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes arriveemenus {
