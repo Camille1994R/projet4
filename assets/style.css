@@ -187,8 +187,8 @@ body .chargement .loader {
   width: 120px;
   height: 120px;
   animation: spin 3s linear;
-  position: absolute;
   justify-content: center;
+  position: absolute;
   top: 200px;
   right: 47%;
 }
@@ -527,6 +527,7 @@ footer li {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes spin {

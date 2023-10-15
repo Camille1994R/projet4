@@ -193,12 +193,12 @@ body {
             width: 120px;
             height: 120px;
             animation: spin 3s linear;
-            position: absolute;
             justify-content: center;
+            position: absolute;
             top: 200px;
             right: 47%;
         }
-}
+    }
 
     .titres {
         margin: 0px 0 22px 0;
@@ -627,6 +627,7 @@ footer {
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
 }    
 
