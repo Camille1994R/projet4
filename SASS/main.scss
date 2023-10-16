@@ -175,16 +175,16 @@ body {
         color: $color-btn;
     }
     .chargement {
-        background: #101010;
+        background: gray;
         display: flex;
         justify-content: center;
-        height: 100%;
+        height: 100vh;
         width: 100%;
-        z-index: 1;
+        z-index: 999;
         top: 0;
         left: 0;
-        animation: boiteloader 3s linear forwards;
-        position: absolute;
+        animation: boiteloader 5s forwards;
+        position: fixed;
 
         .loader {
             border: 16px solid #f3f3f3;
@@ -192,11 +192,11 @@ body {
             border-radius: 50%;
             width: 120px;
             height: 120px;
-            animation: spin 3s linear;
+            animation: spin 5s ;
             justify-content: center;
             position: absolute;
-            top: 200px;
-            right: 47%;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 
@@ -465,20 +465,20 @@ footer {
     padding: 32px 0 40px 0;
 
         .arrivee1 {
-            animation: arriveemenus 4s;
+            animation: arriveemenus 2s;
             }
 
         .arrivee2 {
-            animation: arriveemenus 6s;
+            animation: arriveemenus 4s;
             }
             
         .arrivee3 {
-            animation: arriveemenus 8s;
+            animation: arriveemenus 5s;
             
             }
             
         .arrivee4 {
-            animation: arriveemenus 10s;
+            animation: arriveemenus 6s;
             }
 
         .titre-menu {
@@ -539,6 +539,7 @@ footer {
             box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.10);
             border-radius: 15px;
             position: relative;
+            overflow: hidden;
             
             
    
@@ -585,8 +586,7 @@ footer {
             top : 0px;
             transform: translateX(50px);
             transition: all 1s;
-            overflow: hidden;
-            transform-origin: right 50%;
+            
         }
     
 }
@@ -624,7 +624,14 @@ footer {
 @keyframes boiteloader {
     0% {
       opacity: 1;
+
     }
+
+    70% {
+        opacity: 1;
+    }
+      
+    
     100% {
       opacity: 0;
       z-index: -1;
@@ -657,7 +664,7 @@ footer {
 
 
 
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1070px)  {
 
  body {   
 
@@ -686,6 +693,11 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-self: center;
+
+            .carte_menu {
+                width: 634px;
+                margin: auto;
+            }
     }
 
 
@@ -707,6 +719,8 @@ main {
             flex-wrap: wrap;
             justify-content: center;
             gap : 75px;
+            max-width: 1280px;
+            margin: 0 auto;
                 
 
                 .fullcard {

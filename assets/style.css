@@ -169,16 +169,16 @@ body button {
   color: #353535;
 }
 body .chargement {
-  background: #101010;
+  background: gray;
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
   top: 0;
   left: 0;
-  animation: boiteloader 3s linear forwards;
-  position: absolute;
+  animation: boiteloader 5s forwards;
+  position: fixed;
 }
 body .chargement .loader {
   border: 16px solid #f3f3f3;
@@ -186,11 +186,11 @@ body .chargement .loader {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 3s linear;
+  animation: spin 5s;
   justify-content: center;
   position: absolute;
-  top: 200px;
-  right: 47%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 body .titres {
   margin: 0px 0 22px 0;
@@ -397,16 +397,16 @@ footer li {
   padding: 32px 0 40px 0;
 }
 .la-carte .arrivee1 {
-  animation: arriveemenus 4s;
+  animation: arriveemenus 2s;
 }
 .la-carte .arrivee2 {
-  animation: arriveemenus 6s;
+  animation: arriveemenus 4s;
 }
 .la-carte .arrivee3 {
-  animation: arriveemenus 8s;
+  animation: arriveemenus 5s;
 }
 .la-carte .arrivee4 {
-  animation: arriveemenus 10s;
+  animation: arriveemenus 6s;
 }
 .la-carte .titre-menu {
   font-family: Shrikhand;
@@ -455,6 +455,7 @@ footer li {
   box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   position: relative;
+  overflow: hidden;
 }
 .la-carte .plat:hover .btnvalide {
   opacity: 1;
@@ -491,8 +492,6 @@ footer li {
   top: 0px;
   transform: translateX(50px);
   transition: all 1s;
-  overflow: hidden;
-  transform-origin: right 50%;
 }
 
 .commander {
@@ -523,6 +522,9 @@ footer li {
 /* les Keyframes*/
 @keyframes boiteloader {
   0% {
+    opacity: 1;
+  }
+  70% {
     opacity: 1;
   }
   100% {
@@ -569,6 +571,10 @@ footer li {
     justify-content: center;
     align-self: center;
   }
+  body .la-carte .carte_menu {
+    width: 634px;
+    margin: auto;
+  }
   body main {
     display: flex;
     flex-direction: column;
@@ -584,6 +590,8 @@ footer li {
     flex-wrap: wrap;
     justify-content: center;
     gap: 75px;
+    max-width: 1280px;
+    margin: 0 auto;
   }
   body main .allcards .fullcard {
     width: 490px;
